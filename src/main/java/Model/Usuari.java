@@ -19,7 +19,7 @@ public class Usuari {
         this.llinatge2 = llinatge2;
         this.dni = dni;
         this.telefon = telefon;
-        this.dataRegistre = LocalDate.now(); // assignada automàticament
+        this.dataRegistre = LocalDate.now(); 
     }
 
     public String getNom() { return nom; }
@@ -33,7 +33,7 @@ public class Usuari {
         return nom + " " + llinatge1 + " " + llinatge2;
     }
 
-    // Això és el que es veurà als JComboBox i a la taula
+
     @Override
     public String toString() {
         return getNomComplet();

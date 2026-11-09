@@ -1,2 +1,12 @@
-C:\Users\Usuario\Documents\NetBeansProjects\Entrega1\src\main\java\Main.java
-C:\Users\Usuario\Documents\NetBeansProjects\Entrega1\src\main\java\RegistrarLloguer.java
+C:\Users\Usuario\Documents\NetBeansProjects\Entrega1\src\main\java\logic\GestorDades.java
+C:\Users\Usuario\Documents\NetBeansProjects\Entrega1\src\main\java\logic\GestorException.java
+C:\Users\Usuario\Documents\NetBeansProjects\Entrega1\src\main\java\model\Joc.java
+C:\Users\Usuario\Documents\NetBeansProjects\Entrega1\src\main\java\model\Lloguer.java
+C:\Users\Usuario\Documents\NetBeansProjects\Entrega1\src\main\java\model\Plataforma.java
+C:\Users\Usuario\Documents\NetBeansProjects\Entrega1\src\main\java\model\Usuari.java
+C:\Users\Usuario\Documents\NetBeansProjects\Entrega1\src\main\java\ui\CrearJoc.java
+C:\Users\Usuario\Documents\NetBeansProjects\Entrega1\src\main\java\ui\CrearUsuari.java
+C:\Users\Usuario\Documents\NetBeansProjects\Entrega1\src\main\java\ui\Main.java
+C:\Users\Usuario\Documents\NetBeansProjects\Entrega1\src\main\java\ui\RegistrarLloguer.java
+C:\Users\Usuario\Documents\NetBeansProjects\Entrega1\src\main\java\ui\TornarLloguer.java
+C:\Users\Usuario\Documents\NetBeansProjects\Entrega1\src\main\java\validation\ValidationAPI.java

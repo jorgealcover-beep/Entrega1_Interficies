@@ -37,12 +37,12 @@ public class Joc {
         return unitatsDisponibles.getOrDefault(p, 0);
     }
 
-    /** Serveix per habilitar o deshabilitar els radio buttons. */
+    
     public boolean estaDisponible(Plataforma p) {
         return getUnitatsDisponibles(p) > 0;
     }
 
-    /** Descompta una unitat en llogar. Llança excepció si no n'hi ha. */
+    
     public void reservarUnitat(Plataforma p) {
         if (!estaDisponible(p)) {
             throw new IllegalStateException("No hi ha unitats disponibles de " + titol + " per a " + p);
@@ -50,7 +50,7 @@ public class Joc {
         unitatsDisponibles.put(p, getUnitatsDisponibles(p) - 1);
     }
 
-    /** Retorna una unitat en tornar el lloguer. */
+    
     public void retornarUnitat(Plataforma p) {
         if (!tePlataforma(p) || getUnitatsDisponibles(p) >= getUnitatsTotals(p)) {
             throw new IllegalStateException("Retorn invàlid de " + titol + " per a " + p);

@@ -8,6 +8,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>26</maven.compiler.release>
-        <exec.mainClass>cat.paucasesnovescifp.entrega1.Entrega1</exec.mainClass>
+        <exec.mainClass>ui.Main</exec.mainClass>
     </properties>
 </project>

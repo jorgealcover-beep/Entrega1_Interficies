@@ -2,10 +2,10 @@ package model;
 
 import java.time.LocalDate;
 
-/** Lloguer d'un joc, en una plataforma concreta, per part d'un usuari. */
+
 public class Lloguer {
 
-    /** Estat calculat; no es guarda, així mai queda desincronitzat. */
+    
     public enum Estat {
         ACTIU("Actiu"),
         RETORNAT("Retornat"),
@@ -19,7 +19,7 @@ public class Lloguer {
         public String toString() { return text; }
     }
 
-    /** Dies de lloguer permesos. Canvia'l aquí si vols un altre termini. */
+    
     public static final int DIES_LLOGUER = 3;
 
     private final int numRegistre;
@@ -30,13 +30,13 @@ public class Lloguer {
     private final LocalDate dataPrevista;
     private LocalDate dataRetorn; // null mentre no s'ha retornat
 
-    /** Lloguer nou: les dates s'assignen automàticament. */
+    
     public Lloguer(int numRegistre, Usuari usuari, Joc joc, Plataforma plataforma) {
         this(numRegistre, usuari, joc, plataforma,
              LocalDate.now(), LocalDate.now().plusDays(DIES_LLOGUER));
     }
 
-    /** Constructor amb dates explícites (per a les dades inicials). */
+    
     public Lloguer(int numRegistre, Usuari usuari, Joc joc, Plataforma plataforma,
                    LocalDate dataInici, LocalDate dataPrevista) {
         this.numRegistre = numRegistre;
@@ -59,7 +59,7 @@ public class Lloguer {
         return dataRetorn != null;
     }
 
-    /** Un lloguer no retornat es considera actiu (inclou els fora de termini). */
+    
     public boolean isActiu() {
         return !isRetornat();
     }
@@ -74,7 +74,7 @@ public class Lloguer {
         return Estat.ACTIU;
     }
 
-    /** Marca el lloguer com a retornat i torna la unitat a l'estoc. */
+   
     public void retornar() {
         if (isRetornat()) {
             throw new IllegalStateException("El lloguer " + numRegistre + " ja està retornat.");

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
     <Container class="javax.swing.JMenuBar" name="jMenuBar2">
 
@@ -36,11 +36,17 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Registrar..."/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemRegistrarLloguerActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTornarLloguer">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Tornar..."/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemTornarLloguerActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -73,6 +79,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Crear..."/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemCrearJocActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemBorrarJoc">
               <Properties>
@@ -113,7 +122,7 @@
           <Component id="jScrollPane1" alignment="1" pref="778" max="32767" attributes="0"/>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <Component id="lblTotal" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -124,7 +133,7 @@
               <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
               <Component id="jScrollPane1" pref="397" max="32767" attributes="0"/>
               <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <Component id="lblTotal" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -140,56 +149,21 @@
       <SubComponents>
         <Component class="javax.swing.JTable" name="jTablePrincipal">
           <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder/>
+              </Border>
+            </Property>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="8" rowCount="4">
-                <Column editable="false" title="N&#xfa;m. Registre" type="java.lang.Integer">
-                  <Data value="1"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                </Column>
-                <Column editable="false" title="T&#xed;tol del joc" type="java.lang.String">
-                  <Data value="Outer Wilds"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                </Column>
-                <Column editable="false" title="Usuari" type="java.lang.String">
-                  <Data value="Jorge"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                </Column>
-                <Column editable="false" title="Plataforma" type="java.lang.String">
-                  <Data value="Switch"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                </Column>
-                <Column editable="false" title="Data d&apos;inici" type="java.lang.Object">
-                  <Data value="11/09/2025"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                </Column>
-                <Column editable="false" title="Data de tornada" type="java.lang.Object">
-                  <Data value="23/10/2025"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                </Column>
-                <Column editable="false" title="G&#xe8;nere" type="java.lang.String">
-                  <Data value="Puzzle"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                </Column>
-                <Column editable="false" title="Estat" type="java.lang.Object">
-                  <Data value="Tornat"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                </Column>
+              <Table columnCount="8" rowCount="0">
+                <Column editable="false" title="N&#xfa;m. Registre" type="java.lang.Object"/>
+                <Column editable="false" title="T&#xed;tol del joc" type="java.lang.Object"/>
+                <Column editable="false" title="Usuari" type="java.lang.Object"/>
+                <Column editable="false" title="Plataforma" type="java.lang.Object"/>
+                <Column editable="false" title="Data d&apos;inici" type="java.lang.Object"/>
+                <Column editable="false" title="Data de tornada" type="java.lang.Object"/>
+                <Column editable="false" title="G&#xe8;nere" type="java.lang.Object"/>
+                <Column editable="false" title="Estat" type="java.lang.Object"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -243,7 +217,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="lblTotal">
       <Properties>
         <Property name="text" type="java.lang.String" value="Total de lloguers: N"/>
       </Properties>
